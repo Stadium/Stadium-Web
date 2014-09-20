@@ -1,0 +1,48 @@
+body {
+    background-image: url('../img/small_steps.png');
+    overflow: hidden;
+}
+.navbar {
+    background-color: #00acc1;
+    margin: 0;
+    color: white;
+    padding-top: 5px;
+    box-shadow: 0 2px 5px 2px rgba(14, 14, 14, 0.47);
+}
+.navbar-name {
+    font-size: 1.55em;
+    margin-left: 10px;
+}
+.navbar-logo {
+    height: 42px;
+    margin-right: 15px;
+    float:right;
+}
+.menu-panel {
+    position: absolute;
+    background-color: rgba(71, 71, 71, 0.68);
+    left:-300px;
+}
+.menu-panel-true { 
+    width: 300px;
+    height: 100%;
+    left: 0;
+    transition: .4s;
+}
+.menu-panel-false {
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    transition:.4s;
+}
+.main-container {
+    min-width: 960px;
+    width: 60%;
+    height: 100em;
+    margin: 0 auto;
+    background-color: white;
+}
+.map-frame {
+    margin-top: 15px;
+    border: 10px solid #e8e8e8;
+}

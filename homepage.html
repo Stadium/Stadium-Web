@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html ng-app="stadiumApp">
+   <head>
+        <title>Stadium</title>
+        <link rel="shortcut icon" href="img/shortcut-icon.jpg">
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet'>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script> <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> <script type="text/javascript" src="lib/bootstrap-material-design/scripts/material.js"></script> <script type="text/javascript" src="lib/bootstrap-material-design/scripts/ripples.js"></script> <script type="text/javascript" src="//connect.facebook.net/en_US/sdk.js"></script> <script type="text/javascript" src="js/app.js"></script> 
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="lib/bootstrap-material-design/css-compiled/material.css">
+        <link rel="stylesheet" href="lib/bootstrap-material-design/css-compiled/ripples.css">
+        <link rel="stylesheet" href="lib/bootstrap-material-design/icons/icons-material-design.css">
+        <link rel="stylesheet" href="css/homepage.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body ng-controller="MainCtrl">
+    <div class="navbar">
+        <button class="btn" ng-click="openNavMenu()" style="background-color:transparent"> 
+            <a><i class="icon icon-material-menu" style="color:white"></i></a> 
+        </button> 
+        <span class="navbar-name">Welcome, Christopher!</span>
+        <img src="img/stadium-logo.png" class="navbar-logo">
+    </div>
+    <div class="menu-panel menu-panel-{{nav}}"> </div>
+    </body>
+    <div class="main-container">
+        <div class="col-md-6">
+            <div class="map-frame">
+                <iframe
+                  width="100%"
+                  height="450"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDT3fR_kRbU3ThE_VOLAv5Rp4qDnGFgmec
+                    &q=Space+Needle,Seattle+WA">
+                </iframe>
+            </div>
+        </div>
+        <div class="col-md-6">
+            
+        </div>
+    </div>
+</html>

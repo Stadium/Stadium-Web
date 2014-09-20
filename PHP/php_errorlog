@@ -1,0 +1,4 @@
+[20-Sep-2014 07:16:05 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '/home/justasec/public_html/carpuwl/stadium/php/event_functions.php' (include_path='.:/usr/local/php54/pear') in /home/justasec/public_html/carpuwl/stadium/php/index.php on line 2
+[20-Sep-2014 08:02:45 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '/home/justasec/public_html/carpuwl/stadium/php/event_functions.php' (include_path='.:/usr/local/php54/pear') in /home/justasec/public_html/carpuwl/stadium/php/index.php on line 2
+[20-Sep-2014 08:03:46 CST6CDT] PHP Parse error:  syntax error, unexpected '$title' (T_VARIABLE), expecting ')' in /home/justasec/public_html/carpuwl/stadium/php/event_functions.php on line 80
+[20-Sep-2014 08:06:14 CST6CDT] PHP Parse error:  syntax error, unexpected ';' in /home/justasec/public_html/carpuwl/stadium/php/event_functions.php on line 117

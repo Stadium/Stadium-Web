@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html ng-app="stadiumApp">
+   <head>
+        <title>Stadium</title>
+        <link rel="shortcut icon" href="img/shortcut-icon.jpg">
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet'>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script> <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> <script type="text/javascript" src="lib/bootstrap-material-design/scripts/material.js"></script> <script type="text/javascript" src="lib/bootstrap-material-design/scripts/ripples.js"></script> <script type="text/javascript" src="//connect.facebook.net/en_US/sdk.js"></script> <script type="text/javascript" src="js/app.js"></script> 
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="lib/bootstrap-material-design/css-compiled/material.css">
+        <link rel="stylesheet" href="lib/bootstrap-material-design/css-compiled/ripples.css">
+        <link rel="stylesheet" href="lib/bootstrap-material-design/icons/icons-material-design.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body ng-controller="MainCtrl">
+    <div class="navbar">
+        <button class="btn" ng-click="openNavMenu()" style="background-color:transparent"> 
+            <a><i class="icon icon-material-menu" style="color:white"></i></a> 
+        </button> 
+        <button class="btn" style="background-color:transparent"> 
+            <a style="color:white;text-decoration:none">Account</a> 
+        </button> 
+    </div>
+    <div class="menu-panel menu-panel-{{nav}}"> </div>
+
+    <div class="splash-content-container"> 
+        <div class="landing-page-text" style="margin-bottom:-50px;font-size:2.5em">get playing with</div>
+        <img src="img/stadium-logo.png">
+        <div class="landing-page-text" style="margin-top:15px"> 
+            Browse games happening nearby and join in! Or, create an event and invite your friends to start your own game!
+        </div>
+        <a class="btn btn-lg fb-btn" data-toggle="modal" data-target="#myModal"> 
+        <i class="icon icon-material-post-facebook" style="color:white;margin-right:10px"></i>Sign in with Facebook </a> </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" style="margin-top:10em">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" placeholder="Preffered name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Gender</label>
+                            <div class="col-lg-10">
+                                <div class="radio radio-primary">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="option1" checked="">
+                                        Female
+                                    </label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="option2">
+                                        Male
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" ng-click="login()" data-dismiss="modal">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
